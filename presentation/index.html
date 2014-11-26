@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Ускорение работы с Rails - Sloboda Studio Education</title>
+    <title>Работа с SublimeText like a Pro</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -90,6 +90,7 @@
             <h2>Проект</h2>
             <p>
               <ul>
+                <li>Проект хранит соответствующий ему workspace</li>
                 <li>Меню проектов</li>
                 <li>Быстрый переход между проектами Сtrl+Alt+P</li>
               </ul>
@@ -104,9 +105,9 @@
               <ul>
                 <li>Установка PackageControl</li>
                 <li>Список всех доступных команд Sublime (command palette) Ctrl+Shift+P</li>
-                <li>Управление пакетами: install, remove, list</li>
+                <li>Управление пакетами: install, remove, list, enable/disable</li>
                 <li>Глобальные и пользовательские настройки: редактор, горячие клавиши, плагины</li>
-                <li>Установка пакетов вручную</li>
+                <li>Ручная установка и настройка пакетов</li>
               </ul>
             </p>
           </section>
@@ -116,21 +117,46 @@
           </section>  
         </section>
 
-        
-
         <section>
           <h2>Перемещение по коду и работа с ним</h2>
           <p>
             <ul>
-              <li class="fragment">Поиск/замена в файле (обычный, инкрементный etc.)</li>
-              <li class="fragment">Поиск/замена в открытых файлах / проекте</li>
-              <li class="fragment">Поиск/замена по отдельной папке</li>
-              <li class="fragment">Перемещение/переименование файлов</li>
-              <li class="fragment">Смена регистра</li>
-              <li class="fragment">Фолдинг</li>
-              <li class="fragment">Дублирование строки</li>
-              <li class="fragment">Редактирование всех упоминаний символа в файле</li>
-              <li class="fragment">CTags и переход по методам, классам и пр.</li>
+              <li>Поиск/замена в файле (обычный, инкрементный etc.)</li>
+              <li>Поиск/замена в открытых файлах / проекте</li>
+              <li>Поиск/замена по отдельной папке</li>
+              <li>Перемещение/переименование файлов</li>
+              <li>Смена регистра</li>
+              <li>Фолдинг</li>
+              <li>Дублирование строки</li>
+              <li>Редактирование всех упоминаний символа в файле</li>
+              <li>CTags и переход по методам, классам и пр.</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>Подсветка синтаксиса и lint</h2>
+          <p>
+            <ul>
+              <li>Подсветка синтаксиса</li>
+              <li>SublimeLinter</li>
+              <li>Плагины к SublimeLinter (linters)</li>
+              <li>Конфигурация linters</li>
+              <li>Включение/отключение linters</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>Git</h2>
+          <p>
+            <ul>
+              <li>Checkout</li>
+              <li>Add, commit, amend commit</li>
+              <li>Branches</li>
+              <li>Merge / pull / push</li>
+              <li>Status &amp; diff</li>
+              <li>Blame</li>
             </ul>
           </p>
         </section>
@@ -139,167 +165,10 @@
           <h2>О чем я не рассказал</h2>
           <p>
             <ul>
-              <li class="fragment">Написание плагинов</li>
-              <li class="fragment">Сниппеты</li>
-              <li class="fragment">Более тесная интеграция со сторонними инструментами (отладчик, Zeus etc.)</li>
+              <li>Написание плагинов</li>
+              <li>Сниппеты</li>
+              <li>Более тесная интеграция со сторонними инструментами (отладчик, Zeus etc.)</li>
             </ul>
-          </p>
-        </section>
-
-        <!-- ********************************************************************************************* -->
-
-        <section>
-          <h2>Почему не стоит использовать Spork?</h2>
-          <p>
-            <ul>
-              <li class="fragment">другие инструменты (Zeus, Spring) предоставляют больше возможностей</li>
-              <li class="fragment">проект не поддерживается уже длительное время</li>
-            </ul>
-          </p>
-        </section>
-
-        <section>
-          <section>
-            <h2>Zeus</h2>
-            <p>
-              <a href="https://github.com/burke/zeus">https://github.com/burke/zeus</a>
-            </p>
-            <p>
-              <ul>
-                <li class="fragment">Zeus построен по модели клиент-сервер</li>
-                <li class="fragment">сервер загружает <code>development</code> и <code>test</code> окружения Rails</li>
-                <li class="fragment">клиент выполняет конкретную Rails команду, обращаясь к экземпляру Rails, загруженному в память сервера</li>
-              </ul>
-            </p> 
-          </section>
-          <section>
-            <h2>Базовые команды Zeus</h2>
-            <p>
-              <ul>
-                <li class="fragment"><code>zeus start</code></li>
-                <li class="fragment"><code>zeus g</code></li>
-                <li class="fragment"><code>zeus s</code></li>
-                <li class="fragment"><code>zeus rake</code></li>
-                <li class="fragment"><code>zeus c</code></li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h2>Еще и тесты: <code>zeus rspec</code></h2>
-            <p>
-              Благодаря простой команде <code>zeus rspec</code> есть возможность выполнять тесты намного быстрее
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Spring</h2>
-            <p>
-              <a href="https://github.com/rails/spring">https://github.com/rails/spring</a>
-            </p>
-            <p>
-              <ul>
-                <li class="fragment">та же модель клиент-сервер</li>
-                <li class="fragment">сначала необходимо сгенерировать binstubs: <code>bundle exec spring binstub --all</code></li>
-                <li class="fragment">сервер запускается неявно при первом вызове любого скрипта из <code>bin</code></li>
-                <li class="fragment">при следующем вызове любого скрипта из <code>bin</code> неявно создается клиент</li>
-                <li class="fragment">клиент &laquo;универсальный&raquo; - создается по одному клиенту на <code>development</code> или <code>test</code> окружение, клиент выполняет команды</li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h2>Базовые команды Spring</h2>
-            <p>
-              <ul>
-                <li class="fragment"><code>status</code></li>
-                <li class="fragment"><code>binstubs</code></li>
-                <li class="fragment"><code>stop</code></li>
-                <li class="fragment"><code>rails {console, server, runner, generate, destroy}</code></li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h2>Spring и RSpec</h2>
-            <p>
-              <ul>
-                <li class="fragment"><code>bin/rake test spec</code></li>
-              </ul>
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <h2>Сравнение Zeus vs Spring</h2>
-          <p>
-            <ul>
-              <li class="fragment">Zeus проще перезапускать, но для этого нужна отдельная консоль</li>
-              <li class="fragment">Zeus очень гибкий в конфигурации, можно определять свои команды (см. <a href="https://github.com/burke/zeus/blob/master/docs/ruby/modifying.md">Modifying the boot process</a> на github Zeus); Spring умеет только команды Rails</li>
-              <li class="fragment">со Spring не нужно помнить о разнице между &laquo;улучшенными&raquo; и стандартными командами</li>
-              <li class="fragment">Spring имеет лучшую поддержку, т.к. создан авторами Rails</li>
-            </ul>
-          </p>
-        </section>
-
-        <section>
-          <section>
-            <h2>Guard &amp; friends</h2>
-          </section>
-          <section>
-            <h2>Guard</h2>
-            <p>
-              <a href="https://github.com/guard/guard">https://github.com/guard/guard</a>
-            </p>
-            <p>
-              <ul>
-                <li class="fragment">мониторит изменения в файлах проекта и выполняет при их обнаружении нужные действия</li>
-                <li class="fragment">эти действия определяются плагинами к Guard</li>
-                <li class="fragment">Guard - это консоль с командами</li>
-                <li class="fragment">поддержка различных notifiers</li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h2>guard-rspec</h2>
-            <p>
-              <a href="https://github.com/guard/guard-rspec">https://github.com/guard/guard-rspec</a>
-            </p>
-            <p>
-              Запуск только нужных тестов по изменениям в соответствующих им файлах
-            </p>
-            <p>
-              <ul>
-                <li class="fragment">добавляет свою секцию в Guardfile</li>
-                <li class="fragment">гибкая в конфигурации</li>
-                <li class="fragment">необходимо отключить <code>require 'rspec/autorun'</code> после установки</li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h2>guard-livereload</h2>
-            <p>
-              Автоматическое обновление страницы в браузере при изменении assets
-            </p>
-            <p>
-              <a href="https://github.com/guard/guard-livereload">https://github.com/guard/guard-livereload</a>
-              <a href="https://github.com/johnbintz/rack-livereload">https://github.com/johnbintz/rack-livereload</a>
-            </p>
-            <p>
-              <ul>
-                <li class="fragment">работает по модели клиент-сервер</li>
-                <li class="fragment">клиент - специальный JS-файл, который внедряет на страницу rack-livereload</li>
-                <li class="fragment">сервер - Guard с плагином guard-livereload</li>
-                <li class="fragment">при редактировании шаблонов и partials перезагружает страницу браузера</li>
-                <li class="fragment">при изменении CSS (SASS, LESS) - обновляет стили в браузере даже без перезагрузки страницы</li>
-              </ul>
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <h2>Editors / IDE</h2>
-          <p>
-            To be continued...
           </p>
         </section>
 
@@ -308,7 +177,7 @@
             <h2>Thank you!</h2>
           </section>
           <section>
-            <h2>Questions?</h2>
+            <h2>Dare you to ask...</h2>
           </section>
         </section>
 
